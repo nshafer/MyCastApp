@@ -14,6 +14,9 @@
 		43A5A1771AEAB744009DEBA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A5A1761AEAB744009DEBA1 /* Images.xcassets */; };
 		43A5A17A1AEAB744009DEBA1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A5A1781AEAB744009DEBA1 /* LaunchScreen.xib */; };
 		43A5A1861AEAB744009DEBA1 /* MyCastAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5A1851AEAB744009DEBA1 /* MyCastAppTests.m */; };
+		43A5A1901AEAB814009DEBA1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A5A18F1AEAB814009DEBA1 /* SystemConfiguration.framework */; };
+		43A5A1921AEAB830009DEBA1 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A5A1911AEAB830009DEBA1 /* GoogleCast.framework */; };
+		43A5A1951AEAB8E9009DEBA1 /* CastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5A1941AEAB8E9009DEBA1 /* CastManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		43A5A17F1AEAB744009DEBA1 /* MyCastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A5A1841AEAB744009DEBA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A5A1851AEAB744009DEBA1 /* MyCastAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCastAppTests.m; sourceTree = "<group>"; };
+		43A5A18F1AEAB814009DEBA1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		43A5A1911AEAB830009DEBA1 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleCast.framework; sourceTree = "<group>"; };
+		43A5A1931AEAB8E9009DEBA1 /* CastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CastManager.h; path = ../CastManager.h; sourceTree = "<group>"; };
+		43A5A1941AEAB8E9009DEBA1 /* CastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CastManager.m; path = ../CastManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A5A1921AEAB830009DEBA1 /* GoogleCast.framework in Frameworks */,
+				43A5A1901AEAB814009DEBA1 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		43A5A15D1AEAB744009DEBA1 = {
 			isa = PBXGroup;
 			children = (
+				43A5A1911AEAB830009DEBA1 /* GoogleCast.framework */,
+				43A5A18F1AEAB814009DEBA1 /* SystemConfiguration.framework */,
 				43A5A1681AEAB744009DEBA1 /* MyCastApp */,
 				43A5A1821AEAB744009DEBA1 /* MyCastAppTests */,
 				43A5A1671AEAB744009DEBA1 /* Products */,
@@ -81,6 +92,8 @@
 		43A5A1681AEAB744009DEBA1 /* MyCastApp */ = {
 			isa = PBXGroup;
 			children = (
+				43A5A1931AEAB8E9009DEBA1 /* CastManager.h */,
+				43A5A1941AEAB8E9009DEBA1 /* CastManager.m */,
 				43A5A16D1AEAB744009DEBA1 /* AppDelegate.h */,
 				43A5A16E1AEAB744009DEBA1 /* AppDelegate.m */,
 				43A5A1701AEAB744009DEBA1 /* ViewController.h */,
@@ -221,6 +234,7 @@
 			files = (
 				43A5A1721AEAB744009DEBA1 /* ViewController.m in Sources */,
 				43A5A16F1AEAB744009DEBA1 /* AppDelegate.m in Sources */,
+				43A5A1951AEAB8E9009DEBA1 /* CastManager.m in Sources */,
 				43A5A16C1AEAB744009DEBA1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,8 +363,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyCastApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +378,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyCastApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
