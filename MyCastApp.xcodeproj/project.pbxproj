@@ -16,7 +16,7 @@
 		43A5A1861AEAB744009DEBA1 /* MyCastAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5A1851AEAB744009DEBA1 /* MyCastAppTests.m */; };
 		43A5A1901AEAB814009DEBA1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A5A18F1AEAB814009DEBA1 /* SystemConfiguration.framework */; };
 		43A5A1921AEAB830009DEBA1 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A5A1911AEAB830009DEBA1 /* GoogleCast.framework */; };
-		43A5A1951AEAB8E9009DEBA1 /* CastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5A1941AEAB8E9009DEBA1 /* CastManager.m */; };
+		43A5A1981AEAC5D4009DEBA1 /* CastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5A1971AEAC5D4009DEBA1 /* CastManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 		43A5A1851AEAB744009DEBA1 /* MyCastAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCastAppTests.m; sourceTree = "<group>"; };
 		43A5A18F1AEAB814009DEBA1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		43A5A1911AEAB830009DEBA1 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleCast.framework; sourceTree = "<group>"; };
-		43A5A1931AEAB8E9009DEBA1 /* CastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CastManager.h; path = ../CastManager.h; sourceTree = "<group>"; };
-		43A5A1941AEAB8E9009DEBA1 /* CastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CastManager.m; path = ../CastManager.m; sourceTree = "<group>"; };
+		43A5A1961AEAC5D4009DEBA1 /* CastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastManager.h; sourceTree = "<group>"; };
+		43A5A1971AEAC5D4009DEBA1 /* CastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +92,8 @@
 		43A5A1681AEAB744009DEBA1 /* MyCastApp */ = {
 			isa = PBXGroup;
 			children = (
-				43A5A1931AEAB8E9009DEBA1 /* CastManager.h */,
-				43A5A1941AEAB8E9009DEBA1 /* CastManager.m */,
+				43A5A1961AEAC5D4009DEBA1 /* CastManager.h */,
+				43A5A1971AEAC5D4009DEBA1 /* CastManager.m */,
 				43A5A16D1AEAB744009DEBA1 /* AppDelegate.h */,
 				43A5A16E1AEAB744009DEBA1 /* AppDelegate.m */,
 				43A5A1701AEAB744009DEBA1 /* ViewController.h */,
@@ -234,7 +234,7 @@
 			files = (
 				43A5A1721AEAB744009DEBA1 /* ViewController.m in Sources */,
 				43A5A16F1AEAB744009DEBA1 /* AppDelegate.m in Sources */,
-				43A5A1951AEAB8E9009DEBA1 /* CastManager.m in Sources */,
+				43A5A1981AEAC5D4009DEBA1 /* CastManager.m in Sources */,
 				43A5A16C1AEAB744009DEBA1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
